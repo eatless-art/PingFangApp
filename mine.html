@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/mine.css" />
+    <title>我的</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <span class="iconfont icon-gouwuche"></span>
+          <span class="iconfont icon-guanzhu"></span>
+          <span class="iconfont icon-saoyisao"></span>
+          <span class="iconfont icon-shezhi1"></span>
+        </div>
+        <div class="person">
+          <div class="left">
+            <div class="head-pic">
+              <img src="./images/mine/20200114152708_jlhwb.jpg" alt="" />
+            </div>
+            <div class="person-text">
+              <p>ELIAUK</p>
+              <p>查看个人主页</p>
+            </div>
+          </div>
+          <div class="right">我的积分</div>
+        </div>
+      </header>
+      <section>
+        <div class="banner">
+          <img src="./images/mine/u110_14.gif" alt="" />
+        </div>
+        <div class="option">
+          <img src="./images/mine/b_09.png" alt="" />
+          <img src="./images/mine/b_11.png" alt="" />
+          <img src="./images/mine/b_13.png" alt="" />
+          <img src="./images/mine/b_15.png" alt="" />
+          <img src="./images/mine/b_21.png" alt="" />
+          <img src="./images/mine/b_22.png" alt="" />
+          <img src="./images/mine/b_24.png" alt="" />
+          <img src="./images/mine/b_26.png" alt="" />
+          <img src="./images/mine/b_32.png" alt="" />
+          <img src="./images/mine/b_34.png" alt="" />
+          <img src="./images/mine/b_36.png" alt="" />
+          <img src="./images/mine/b_38.png" alt="" />
+        </div>
+      </section>
+      <footer>
+        <div class="footer-inner">
+          <p class="to-index"><span class="iconfont icon-shouye"></span>首页</p>
+          <p class="to-fixtures">
+            <span class="iconfont icon-zhuangxiu"></span>装修
+          </p>
+          <p class="to-add"><span class="add">+</span></p>
+          <p class="to-shopping">
+            <span class="iconfont icon-fenqifenqishangcheng1"></span>商城
+          </p>
+          <p class="to-mine"><span class="iconfont icon-wode"></span>我的</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".to-index").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".to-fixtures").onclick = function() {
+        location.assign("./fixtures.html");
+      };
+      document.querySelector(".to-add").onclick = function() {
+        location.assign("./add.html");
+      };
+      document.querySelector(".to-shopping").onclick = function() {
+        location.assign("./shopping.html");
+      };
+      document.querySelector(".to-mine").onclick = function() {
+        location.assign("./mine.html");
+      };
+    </script>
+  </body>
+</html>

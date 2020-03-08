@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/add.css" />
+    <title>添加页</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="left">
+            <span class="iconfont icon-saoyisao"></span>
+            <p>用电脑写文章、整屋</p>
+          </div>
+          <p class="right">草稿箱</p>
+        </div>
+        <div class="banner">
+          <img src="./images/add/u75_03.gif" alt="" />
+        </div>
+        <div class="text">
+          <div class="text-left">每天一张生活日常，夏日必备好物。</div>
+          <div class="text-right">点击参与</div>
+        </div>
+      </header>
+      <section>
+        <div class="main-inner">
+          <a href="./publish-article.html" class="one"
+            ><span class="iconfont icon-wenzhangliebiaoxiangqing "></span
+            >发布文章</a
+          >
+          <a href="./publish-picture.html" class="two"
+            ><span class="iconfont icon-ziyuan"></span>发布图片</a
+          >
+          <a href="./publish-house.html" class="three"
+            ><span class="iconfont icon-fenqifenqishangcheng1"></span
+            >发布整屋</a
+          >
+        </div>
+      </section>
+      <footer>
+        <span class="iconfont icon-cross-fill cross-fill"></span>
+      </footer>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".cross-fill").onclick = function() {
+        location.assign("./home-page.html");
+      };
+    </script>
+  </body>
+</html>

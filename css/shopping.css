@@ -1,0 +1,84 @@
+.wrap {
+  width: 100vw;
+  background-color: #e9eaee;
+}
+header {
+  position: relative;
+}
+.banner {
+  width: 100vw;
+}
+.banner img {
+  width: 100%;
+}
+.option {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 2.7rem;
+  left: 0.35rem;
+  width: 6.9rem;
+  height: 3.35rem;
+  border-radius: 5px;
+  background-color: #fff;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.option img {
+  width: 1.44rem;
+  height: 1.59rem;
+}
+section {
+  width: 100vw;
+  background-color: #e9eaee;
+  margin-top: 4rem;
+}
+.swiper-container {
+  width: 100vw;
+  padding: 0.5rem 0rem;
+  background-color: #cda275;
+}
+.text {
+  margin-left: 3.08rem;
+  display: flex;
+  width: 4.1rem;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.title {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+.more {
+  font-size: 0.3rem;
+  font-weight: 200;
+}
+
+.swiper-slide {
+  width: 6.9rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.swiper-slide img {
+  width: 2.27rem;
+  height: 1.52rem;
+}
+.buy {
+  margin-top: 0.5rem;
+}
+.all {
+  text-align: center;
+  font-size: 0.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.buy-pic {
+  width: 100vw;
+  display: flex;
+}
+.buy-pic img {
+  width: 50%;
+}

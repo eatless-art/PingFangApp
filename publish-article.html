@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/pulish-article.css" />
+    <title>发布文章</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <p class="left">关闭</p>
+          <div class="right">
+            <p>保存</p>
+            <p>预览</p>
+            <p>发布</p>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./images/pulish-article/u81_02.gif" alt="" />
+        </div>
+      </header>
+      <section>
+        <input type="text" placeholder="请输入标题" />
+        <textarea class="publish" placeholder="请输入正文"></textarea>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".left").onclick = function() {
+        location.assign("./add.html");
+      };
+    </script>
+  </body>
+</html>

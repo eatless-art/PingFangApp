@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/picture-header.css" />
+    <link rel="stylesheet" href="./css/publish-picture(2).css" />
+    <title>发布图片(2)</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="top-inner">
+            <div class="left">
+              <p class="back"><span class="iconfont icon-zuojiantou"></span></p>
+              <p>所有图片</p>
+            </div>
+            <span class="right">发布</span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <textarea
+          class="publish"
+          placeholder="说说关于这张图片的故事吧"
+        ></textarea>
+        <div class="add-tag">添加标签</div>
+        <div class="add-pic">
+          <img src="./images/publish-picture/one.jpg" alt="" />
+          <img src="./images/publish-picture/two.jpg" alt="" />
+          <div class="box">+</div>
+        </div>
+        <div class="greens">
+          <div class="up">
+            <p class="up-left">关联商品</p>
+            <div class="up-right">
+              <p>未选择</p>
+              <p>＞</p>
+            </div>
+          </div>
+          <div class="down">
+            <p class="down-left">本内容由我原创</p>
+            <div class="on-off">
+              <div class="off"></div>
+              <div class="on"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+      var isOn = false;
+      var on = document.querySelector(".on");
+      var off = document.querySelector(".off");
+      document.querySelector(".on-off").onclick = function() {
+        if (!isOn) {
+          on.style.backgroundColor = "#f8f4f5";
+          off.style.backgroundColor = "#f37a5b";
+          isOn = true;
+        } else {
+          off.style.backgroundColor = "#f37a5b";
+          on.style.backgroundColor = "#f8f4f5";
+          isOn = false;
+        }
+      };
+    </script>
+  </body>
+</html>

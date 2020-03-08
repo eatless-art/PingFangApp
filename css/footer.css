@@ -1,0 +1,41 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #f1eef5;
+  height: 0.97rem;
+  padding: 10px 0px;
+}
+.footer-inner {
+  display: flex;
+  width: 6.9rem;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-inner p {
+  color: black;
+  font-size: 0.5rem;
+}
+.footer-inner p > span {
+  font-size: 0.5rem;
+  user-select: none;
+}
+.add {
+  width: 0.78rem;
+  height: 0.78rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.78rem;
+}
+.add {
+  background-color: black;
+  color: orange;
+}
+.footer-inner > p {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.25rem;
+  text-align: center;
+}

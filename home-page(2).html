@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <link rel="stylesheet" href="./css/home-page(2).css" />
+    <title>首页(推荐)</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <span class="iconfont icon-Pathx"></span>
+          <ul class="list">
+            <li class="active-color follow">关注</li>
+            <li class="recommend">推荐</li>
+          </ul>
+          <span class="iconfont icon-xinxi"></span>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="🔍大家都在搜：出租屋如何解决收纳" />
+        </div>
+        <div class="tab t-2">
+          <div class="circles">
+            <p class="to-intelligent ">
+              <img src="./images/home-page/icon.png" alt="" />智能生成
+            </p>
+            <p class="to-browse">
+              <img src="./images/home-page/icon1.png" alt="" />看图片
+            </p>
+            <p class="to-house">
+              <img src="./images/home-page/icon2.png" alt="" />整屋房例
+            </p>
+            <p class="to-topic">
+              <img src="./images/home-page/icon3.png" alt="" />话题讨论
+            </p>
+          </div>
+          <div class="banner">
+            <img src="./images/home-page/img1.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <section></section>
+      <footer>
+        <div class="footer-inner">
+          <p class="to-index"><span class="iconfont icon-shouye"></span>首页</p>
+          <p class="to-fixtures">
+            <span class="iconfont icon-zhuangxiu"></span>装修
+          </p>
+          <p class="to-add"><span class="add">+</span></p>
+          <p class="to-shopping">
+            <span class="iconfont icon-fenqifenqishangcheng1"></span>商城
+          </p>
+          <p class="to-mine"><span class="iconfont icon-wode"></span>我的</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var tabArrOne = [
+        {
+          headImg: "./images/home-page/six.jpg",
+          userName: "MUNI",
+          text:
+            "建议在城内主要路段发布户外广告。 其中城内发布灯杆广告， 展示公司的广告语和核心理念，主要路口发布大型户外广告，展示公司的企业形象和精 美的样板间。户外广告能迅速树立起公司的品牌形象。",
+          pic: "./images/home-page/0003_03.png",
+          comments: 23,
+          collect: 225,
+          zans: 105,
+          follow: false,
+          isAgree: false,
+          isCollect: false
+        },
+        {
+          headImg: "./images/publish-picture/two.jpg",
+          userName: "LY",
+          text:
+            "就现在白色或者浅灰色的花瓶，另外花瓶的布局应根据房间内墙壁、天花板吊顶、地板以及家具和其他摆设物的色彩来选定。",
+          pic: "./images/home-page/0003_05.png",
+          comments: 35,
+          collect: 20,
+          zans: 92,
+          follow: false,
+          isAgree: false,
+          isCollect: false
+        },
+        {
+          headImg: "./images/publish-picture/eight.jpg",
+          userName: "BABA",
+          text:
+            "个人觉得用艺术漆比较好,但是可能有点麻烦。如果要快的话可以用淡色系的壁纸,不要有太多花纹,最好是白色。",
+          pic: "./images/home-page/003_06.png",
+          comments: 55,
+          collect: 32,
+          zans: 1001,
+          follow: false,
+          isAgree: false,
+          isCollect: false
+        }
+      ];
+      tabArrOne.forEach(function(ele) {
+        var tabTwo = document.createElement("div");
+        tabTwo.className = "t-2-inner";
+        tabTwo.innerHTML =
+          "<div class='tab-top'><div class='tab-left'><img class='head-img' src=" +
+          ele.headImg +
+          "><p class='username'>" +
+          ele.userName +
+          "</p></div><div class='tab-right'>关注</div></div><div class='tab-banner'><p class='tab-text'>" +
+          ele.text +
+          "</p><img src=" +
+          ele.pic +
+          "></div><div class='tab-down'><span class='iconfont icon-pinglun'>" +
+          ele.comments +
+          "</span><span class='iconfont icon-shoucang collect'>" +
+          ele.collect +
+          "</span><span class='iconfont icon-dianzan zans'>" +
+          ele.zans +
+          "</span></div>";
+        document.querySelector(".t-2").appendChild(tabTwo);
+      });
+      // var li = document.querySelectorAll(".list li");
+      // li.forEach(function(ele, index) {
+      //   ele.onclick = function() {
+      //     li.forEach(function(item) {
+      //       item.style.color = "#c7c7c9";
+      //     });
+      //     ele.style.color = "#000";
+      //   };
+      // });
+      var isFollow = document.querySelectorAll(".tab-right");
+      isFollow.forEach(function(ele, index) {
+        ele.onclick = function() {
+          if (!tabArrOne[index].follow) {
+            ele.style.color = "yellow";
+            ele.innerHTML = "已关注";
+            tabArrOne[index].follow = true;
+          } else {
+            ele.style.color = "#fff";
+            ele.innerHTML = "关注";
+            tabArrOne[index].follow = false;
+          }
+        };
+      });
+      var agree = document.querySelectorAll(".zans");
+      var collect = document.querySelectorAll(".collect");
+      agree.forEach(function(ele, index) {
+        ele.onclick = function() {
+          var count = ele.innerHTML;
+          if (!tabArrOne[index].isAgree) {
+            ele.style.color = "red";
+            ele.innerHTML = count * 1 + 1;
+            tabArrOne[index].isAgree = true;
+          } else {
+            ele.style.color = "#000";
+            ele.innerHTML = count * 1 - 1;
+            tabArrOne[index].isAgree = false;
+          }
+        };
+      });
+      collect.forEach(function(ele, index) {
+        ele.onclick = function() {
+          var count = ele.innerHTML;
+          if (!tabArrOne[index].isCollect) {
+            ele.style.color = "red";
+            ele.innerHTML = count * 1 + 1;
+            tabArrOne[index].isCollect = true;
+          } else {
+            ele.style.color = "#000";
+            ele.innerHTML = count - 1;
+            tabArrOne[index].isCollect = false;
+          }
+        };
+      });
+      document.querySelector(".to-index").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".to-fixtures").onclick = function() {
+        location.assign("./fixtures.html");
+      };
+      document.querySelector(".to-add").onclick = function() {
+        location.assign("./add.html");
+      };
+      document.querySelector(".to-shopping").onclick = function() {
+        location.assign("./shopping.html");
+      };
+      document.querySelector(".to-mine").onclick = function() {
+        location.assign("./mine.html");
+      };
+      document.querySelector(".to-intelligent").onclick = function() {
+        location.assign("./Intelligent.html");
+      };
+      document.querySelector(".to-browse").onclick = function() {
+        location.assign("./browse-picture.html");
+      };
+      document.querySelector(".to-house").onclick = function() {
+        location.assign("./house-case.html");
+      };
+      document.querySelector(".to-topic").onclick = function() {
+        location.assign("./topic.html");
+      };
+      document.querySelector(".follow").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".recommend").onclick = function() {
+        location.assign("./home-page(2).html");
+      };
+    </script>
+  </body>
+</html>

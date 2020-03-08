@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/picture-header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/house-case.css" />
+    <title>房屋案例</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="top-inner">
+            <div class="left">
+              <p class="back"><span class="iconfont icon-zuojiantou"></span></p>
+              <p>房屋案例</p>
+            </div>
+            <span class="iconfont icon-saoyisao right"></span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section-inner">
+          <ul class="list list1">
+            <li class="all">全部</li>
+            <li>一室</li>
+            <li>两室</li>
+            <li>三室</li>
+            <li>四室</li>
+            <li>五室</li>
+            <li>六室</li>
+            <li>七室</li>
+          </ul>
+          <ul class="list list2">
+            <li class="all">全部</li>
+            <li>60m²</li>
+            <li>90m²</li>
+            <li>120m²</li>
+            <li>150m²</li>
+          </ul>
+          <ul class="list list3">
+            <li class="all">全部</li>
+            <li>美式</li>
+            <li>北欧</li>
+            <li>日式</li>
+            <li>现代</li>
+            <li>复古</li>
+            <li>中式</li>
+            <li>工业</li>
+          </ul>
+          <ul class="list list4">
+            <li class="all">全部</li>
+            <li>屋主</li>
+            <li>设计</li>
+          </ul>
+          <ul class="list list5">
+            <li class="all">全部</li>
+            <li>编辑</li>
+            <li>收藏</li>
+            <li>分享</li>
+          </ul>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/home-page/0003_03.png" alt="" /><img
+                src="./images/home-page/0003_05.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/home-page/003_06.png" alt="" /><img
+                src="./images/home-page/guanzhu_03.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/home-page/img2.png" alt="" /><img
+                src="./images/home-page/pic_06.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="house-card">
+          <img src="./images/house-case/u53.png" alt="" />
+          <h4>惬意舒适的美式两居</h4>
+          <p>两室·89平米</p>
+        </div>
+        <div class="house-card">
+          <img src="./images/house-case/img2.png" alt="" />
+          <h4>极简风格的两居室</h4>
+          <p>两室·100平米</p>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-inner">
+          <p class="to-index"><span class="iconfont icon-shouye"></span>首页</p>
+          <p class="to-fixtures">
+            <span class="iconfont icon-zhuangxiu"></span>装修
+          </p>
+          <p class="to-add"><span class="add">+</span></p>
+          <p class="to-shopping">
+            <span class="iconfont icon-fenqifenqishangcheng1"></span>商城
+          </p>
+          <p class="to-mine"><span class="iconfont icon-wode"></span>我的</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: false,
+        slidesPerView: 1.5
+      });
+      var allLi = document.querySelectorAll(".list1 li");
+      allLi.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLi.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var allLiTwo = document.querySelectorAll(".list2 li");
+      allLiTwo.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLiTwo.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var allLiThree = document.querySelectorAll(".list3 li");
+      allLiThree.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLiThree.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var allLiFour = document.querySelectorAll(".list4 li");
+      allLiFour.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLiFour.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var allLiFive = document.querySelectorAll(".list5 li");
+      allLiFive.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLiFive.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      document.querySelector(".to-index").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".to-fixtures").onclick = function() {
+        location.assign("./fixtures.html");
+      };
+      document.querySelector(".to-add").onclick = function() {
+        location.assign("./add.html");
+      };
+      document.querySelector(".to-shopping").onclick = function() {
+        location.assign("./shopping.html");
+      };
+      document.querySelector(".to-mine").onclick = function() {
+        location.assign("./mine.html");
+      };
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+    </script>
+  </body>
+</html>

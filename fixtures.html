@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/fixtures.css" />
+    <title>装修页面</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="oblong"></div>
+        </div>
+        <div class="banner">
+          <img src="./images/fixtures/u56_02.gif" alt="" />
+        </div>
+      </header>
+      <section>
+        <p class="text">装修前期</p>
+        <div class="pic">
+          <img src="./images/fixtures/u56_09.gif" alt="" />
+          <img src="./images/fixtures/u56_11.gif" alt="" />
+          <img src="./images/fixtures/u56_13.gif" alt="" />
+          <img src="./images/fixtures/u56_18.gif" alt="" />
+          <img src="./images/fixtures/u56_03.gif" alt="" />
+          <img src="./images/fixtures/u56_20_03.gif" alt="" />
+        </div>
+      </section>
+      <footer>
+        <div class="footer-inner">
+          <p class="to-index"><span class="iconfont icon-shouye"></span>首页</p>
+          <p class="to-fixtures">
+            <span class="iconfont icon-zhuangxiu"></span>装修
+          </p>
+          <p class="to-add"><span class="add">+</span></p>
+          <p class="to-shopping">
+            <span class="iconfont icon-fenqifenqishangcheng1"></span>商城
+          </p>
+          <p class="to-mine"><span class="iconfont icon-wode"></span>我的</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".to-index").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".to-fixtures").onclick = function() {
+        location.assign("./fixtures.html");
+      };
+      document.querySelector(".to-add").onclick = function() {
+        location.assign("./add.html");
+      };
+      document.querySelector(".to-shopping").onclick = function() {
+        location.assign("./shopping.html");
+      };
+      document.querySelector(".to-mine").onclick = function() {
+        location.assign("./mine.html");
+      };
+    </script>
+  </body>
+</html>

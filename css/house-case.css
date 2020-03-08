@@ -1,0 +1,55 @@
+section {
+  width: 100vw;
+  background-color: #f0eff5;
+  padding: 1.1rem 0rem;
+}
+.section-inner {
+  width: 6.92rem;
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list:nth-child(4) {
+  width: 3.35rem;
+}
+.list li {
+  font-size: 0.3rem;
+  margin-bottom: 10px;
+}
+.list .all {
+  width: 0.84rem;
+  height: 0.35rem;
+  text-align: center;
+  line-height: 0.35rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+.swiper-wrapper {
+  width: 5rem;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: space-around;
+}
+.swiper-slide img {
+  width: 45%;
+}
+.house-card {
+  margin: 20px auto;
+  width: 6.92rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.house-card img {
+  width: 100%;
+}
+.house-card h4 {
+  font-size: 0.4rem;
+}
+.house-card {
+  font-size: 0.3rem;
+}

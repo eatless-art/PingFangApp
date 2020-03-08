@@ -1,0 +1,136 @@
+.wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/register/denglu.png);
+  background-size: cover;
+}
+.box {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #eee;
+  z-index: 3;
+  display: none;
+}
+.box p {
+  font-size: 0.4rem;
+  color: orange;
+  text-align: center;
+  line-height: 1.2rem;
+}
+.box button {
+  display: block;
+  width: 1.5rem;
+  line-height: 0.6rem;
+  border-radius: 3px;
+  font-size: 0.25rem;
+  text-align: center;
+  background-color: pink;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+}
+.logo-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2.5rem;
+  width: 1.87rem;
+  height: 1.88rem;
+}
+.logo {
+  width: 100%;
+}
+.logo-box p {
+  margin-top: 0.2rem;
+  font-size: 0.2rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  text-align: center;
+}
+.register-input {
+  width: 100vw;
+  height: 1.95rem;
+  position: absolute;
+  left: 0;
+  top: 4.3rem;
+  margin-top: 0.7rem;
+}
+.register-input input {
+  display: block;
+  margin: 0 auto;
+  width: 6.59rem;
+  height: 0.86rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  margin-top: 0.1rem;
+}
+.register {
+  position: absolute;
+  width: 100vw;
+  bottom: 4.9rem;
+  left: 0;
+}
+.register a {
+  display: block;
+  width: 6.59rem;
+  background-color: #f37b59;
+  height: 0.89rem;
+  border-radius: 5px;
+  font-size: 0.4rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #fff;
+  line-height: 0.89rem;
+  text-indent: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.option {
+  position: absolute;
+  width: 3rem;
+  display: flex;
+  left: 4.83rem;
+  bottom: 4.37rem;
+  align-items: center;
+}
+.option p {
+  font-size: 0.25rem;
+  color: #fff;
+  margin-left: 5px;
+}
+.icon {
+  width: 100vw;
+  position: absolute;
+  color: #f8e2bd;
+  left: 0;
+  bottom: 1.5rem;
+}
+.icon-inner {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 5rem;
+}
+.icon span {
+  display: block;
+  text-align: center;
+  font-size: 0.4rem;
+}
+.agree {
+  position: absolute;
+  font-size: 0.2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  bottom: 1.1rem;
+  left: 2.1rem;
+}

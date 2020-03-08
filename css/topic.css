@@ -1,0 +1,54 @@
+.banner-topic {
+  width: 100vw;
+  margin-bottom: 20px;
+}
+.banner-topic img {
+  width: 100%;
+}
+section {
+  padding: 1rem 0rem;
+  background-color: #f1eef5;
+}
+.tabs {
+  width: 100vw;
+  background-color: #f1eef5;
+}
+.list {
+  width: 6.92rem;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.list li {
+  font-size: 0.4rem;
+}
+.all-topic {
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #fff;
+  background-color: #000;
+}
+.paragraph {
+  width: 6.92rem;
+  height: 1.97rem;
+  border-radius: 10px;
+  background-color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 0.3rem;
+  margin: 15px auto;
+}
+.tab:nth-child(2) {
+  display: none;
+}
+.tab:nth-child(3) {
+  display: none;
+}
+.tab:nth-child(4) {
+  display: none;
+}

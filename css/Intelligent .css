@@ -1,0 +1,54 @@
+section {
+  width: 100vw;
+}
+.key-word-container,
+.key-word-container-2 {
+  width: 6.92rem;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.key-word {
+  padding-top: 1.2rem;
+  list-style: none;
+  display: flex;
+  width: 5rem;
+  height: 0.5rem;
+  justify-content: space-around;
+}
+.key-word li,
+.key-word-2 li {
+  width: 0.85rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  font-size: 0.3rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.key-word li:last-child {
+  width: 1.85rem;
+}
+.title {
+  width: 6.92rem;
+  margin: 0 auto;
+  font-size: 0.35rem;
+  margin-bottom: 10px;
+}
+.pic {
+  width: 6.92rem;
+  margin: 0 auto;
+}
+.pic img {
+  width: 100%;
+}
+.key-word-2 {
+  margin-top: 10px;
+  width: 5.64rem;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.key-word-2 li {
+  margin-bottom: 3px;
+  margin-right: 5px;
+}

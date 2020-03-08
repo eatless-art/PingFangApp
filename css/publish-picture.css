@@ -1,0 +1,11 @@
+section .pic {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pic img {
+  width: 1.86rem;
+  height: 1.86rem;
+  margin-top: 2px;
+}

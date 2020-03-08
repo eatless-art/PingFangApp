@@ -1,0 +1,49 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100vw;
+  height: 4.95rem;
+  background-color: #33b0aa;
+  padding: 10px;
+}
+.top span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+.mid {
+  margin-top: 1.54rem;
+  text-align: center;
+}
+.mid h3 {
+  font-size: 0.5rem;
+  color: #fff;
+}
+.mid p {
+  font-size: 0.3rem;
+  color: #fff;
+}
+section {
+  width: 100vw;
+  background-color: #f6f4f5;
+  padding: 0.55rem 0rem;
+}
+section li {
+  display: flex;
+  width: 6.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+.left,
+.right {
+  font-size: 0.3rem;
+}
+.right {
+  color: #33b0aa;
+  font-size: 0.5rem;
+  font-weight: 1000;
+}

@@ -1,0 +1,150 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1eef5;
+}
+.top {
+  width: 6.92rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  border-bottom: 1px solid #000;
+}
+.top span {
+  display: block;
+  font-size: 0.5rem;
+}
+.list {
+  display: flex;
+  width: 1.93rem;
+  list-style: none;
+  justify-content: space-between;
+}
+.list .recommend {
+  font-size: 0.4rem;
+  color: #c7c7c9;
+}
+.list .follow {
+  font-size: 0.4rem;
+  color: #000;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #000;
+}
+.search {
+  width: 100vw;
+  padding: 10px 0px;
+}
+.search input {
+  display: block;
+  width: 6.92rem;
+  margin: 0 auto;
+  outline: none;
+}
+.word {
+  width: 6.92rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.word p {
+  font-size: 0.3rem;
+}
+.swiper-wrapper {
+  width: 5rem;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: space-around;
+}
+.swiper-slide img {
+  width: 45%;
+}
+.banner {
+  width: 6.92rem;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+.circles {
+  width: 6.92rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.circles p {
+  width: 1.45rem;
+  height: 1.33rem;
+  display: block;
+  font-size: 0.25rem;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+.circles p img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.tab {
+  background-color: #f1eef5;
+}
+.tab-inner,
+.t-2-inner {
+  width: 6.92rem;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.tab-top {
+  width: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-top img {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+}
+.username {
+  font-size: 0.3rem;
+}
+.tab-text {
+  margin: 10px 0px;
+  font-size: 0.25rem;
+}
+.tab-banner {
+  width: 6.92rem;
+  margin-bottom: 10px;
+}
+.tab-banner img {
+  width: 100%;
+}
+.tab-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+.t-2-inner > .tab-top {
+  width: 6.92rem;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-left {
+  display: flex;
+  width: 2.3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-right {
+  width: 0.97rem;
+  height: 0.33rem;
+  border-radius: 10px;
+  background-color: #000;
+  font-size: 0.2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.33rem;
+}

@@ -1,0 +1,78 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100vw;
+  background-color: #062617;
+  padding: 20px 0px;
+}
+.top {
+  display: flex;
+  width: 3.17rem;
+  justify-content: space-around;
+  margin-left: 4rem;
+  margin-bottom: 20px;
+}
+.top span {
+  display: block;
+  font-size: 0.5rem;
+  color: #fff;
+}
+.person {
+  display: flex;
+  width: 7.2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.left {
+  display: flex;
+  width: 3.45rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-pic {
+  width: 1.39rem;
+  height: 1.39rem;
+}
+.head-pic img {
+  width: 100%;
+  border-radius: 50%;
+}
+.person-text p {
+  font-size: 0.3rem;
+  color: #fff;
+}
+.right {
+  width: 1.21rem;
+  height: 0.53rem;
+  font-size: 0.23rem;
+  color: #fff;
+  background-color: #f27a58;
+  text-align: center;
+  line-height: 0.53rem;
+}
+section {
+  padding: 20px 0px;
+}
+.banner {
+  width: 6.87rem;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+.option {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.option img {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-bottom: 20px;
+}

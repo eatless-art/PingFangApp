@@ -1,0 +1,116 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #33b0aa;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin-top: 0.5rem;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 6.9rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.left {
+  width: 3.04rem;
+  justify-content: space-around;
+  display: flex;
+  align-items: baseline;
+}
+.left span {
+  display: block;
+  font-size: 0.3rem;
+  font-weight: bolder;
+  color: #fff;
+}
+.left p,
+.right {
+  font-size: 0.25rem;
+  color: #fff;
+  font-weight: 200;
+}
+.banner {
+  width: 6.9rem;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+.text {
+  width: 6.9rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+  align-items: baseline;
+}
+.text-left {
+  font-size: 0.3rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.text-right {
+  width: 1.45rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ff7558;
+  font-size: 0.2rem;
+  font-weight: 200;
+  border-radius: 3px;
+}
+section {
+  width: 100vw;
+  margin-top: 2.78rem;
+}
+.main-inner {
+  display: flex;
+  width: 6rem;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.main-inner a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+.main-inner a > span {
+  width: 1.28rem;
+  height: 1.28rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.28rem;
+  background-color: #97fecf;
+  display: block;
+  font-size: 0.7rem;
+  color: #1b5467;
+  margin-bottom: 5px;
+  box-shadow: 7px 1px #185665;
+}
+footer {
+  width: 100vw;
+  margin-top: 1.92rem;
+}
+footer > .iconfont {
+  margin: 0 auto;
+  display: block;
+  width: 0.78rem;
+  height: 0.78rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.78rem;
+  background-color: #97fecf;
+  border-radius: 50%;
+  color: #195c62;
+  font-size: 0.5rem;
+  font-weight: bolder;
+}

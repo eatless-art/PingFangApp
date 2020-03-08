@@ -1,0 +1,11 @@
+section {
+  width: 100vw;
+}
+.text {
+  text-align: center;
+  margin-top: 1.92rem;
+}
+.text p {
+  font-size: 0.25rem;
+  font-weight: 200;
+}

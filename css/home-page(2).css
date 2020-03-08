@@ -1,0 +1,16 @@
+section {
+  width: 100vw;
+  background-color: #f1eef5;
+  padding: 1rem 0rem;
+}
+.list .recommend {
+  font-size: 0.4rem;
+  color: #000;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #000;
+}
+.list .follow {
+  font-size: 0.4rem;
+  color: #c7c7c9;
+  border: none;
+}

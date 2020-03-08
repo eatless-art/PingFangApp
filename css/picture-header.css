@@ -1,0 +1,49 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f4f5;
+}
+.top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: #f6f4f5;
+}
+.top-inner {
+  display: flex;
+  width: 6.9rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.left {
+  display: flex;
+  width: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  text-decoration: none;
+}
+.left .back span {
+  display: block;
+  font-size: 0.5rem;
+  color: #2fb6af;
+  font-weight: 800;
+}
+.left p {
+  font-size: 0.3rem;
+}
+.right {
+  display: block;
+  font-size: 0.3rem;
+  color: #000;
+}
+.banner {
+  width: 100vw;
+}
+.banner img {
+  width: 100%;
+}

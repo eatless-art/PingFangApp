@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+    <title>登录页</title>
+    <div class="wrap">
+      <div class="alert-box">
+        <div class="count box">
+          <p>请输入账号</p>
+          <button class="count-btn">确定</button>
+        </div>
+        <div class="forget box">
+          <p>请输入密码</p>
+          <button class="forget-btn">确定</button>
+        </div>
+      </div>
+      <div class="logo-box">
+        <img class="logo" src="./images/register/u10-恢复的_03.gif" alt="" />
+        <p>欢迎回家</p>
+      </div>
+      <div class="register-input">
+        <input class="one" type="text" placeholder="手机号/邮箱/用户名" />
+        <input class="two" type="password" />
+      </div>
+      <div class="register">
+        <a href="./home-page.html">登录</a>
+      </div>
+      <div class="option">
+        <p>注册账号</p>
+        <p>忘记密码？</p>
+      </div>
+      <div class="icon">
+        <div class="icon-inner">
+          <span class="iconfont icon-weixin"></span>
+          <span class="iconfont icon-qq"></span>
+          <span class="iconfont icon-weibo"></span>
+        </div>
+      </div>
+      <p class="agree">登录代表你同意《平方用户同意》</p>
+    </div>
+  </head>
+  <body>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var countBox = document.querySelector(".count");
+      var forgetBox = document.querySelector(".forget");
+      document.querySelector(".register>a").onclick = function(event) {
+        var count = document.querySelector(".one").value;
+        var password = document.querySelector(".two").value;
+        if (count === "") {
+          countBox.style.display = "block";
+          event.preventDefault();
+        } else if (password === "") {
+          forgetBox.style.display = "block";
+          event.preventDefault();
+        } else if (count === "" && password === "") {
+          countBox.style.display = "block";
+          event.preventDefault();
+        }
+      };
+      document.querySelector(".count-btn").onclick = function() {
+        countBox.style.display = "none";
+      };
+      document.querySelector(".forget-btn").onclick = function() {
+        forgetBox.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/picture-header.css" />
+    <link rel="stylesheet" href="./css/publish-picture(1).css" />
+    <title>发布图片(1)</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="top-inner">
+            <div class="left">
+              <p class="back"><span class="iconfont icon-zuojiantou"></span></p>
+              <p>所有图片</p>
+            </div>
+            <span class="right">继续</span>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./images/publish-picture(1)/u88_02.gif" alt="" />
+        </div>
+      </header>
+      <section>
+        <div class="text">
+          <p>点击图片任意位置添加标签</p>
+          <p>添加标签后，你的图片会更容易被发现哦</p>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".right").onclick = function() {
+        location.assign("./publish-picture(2).html");
+      };
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+    </script>
+  </body>
+</html>

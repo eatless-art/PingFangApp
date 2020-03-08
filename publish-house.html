@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/publish-house.css" />
+    <title>发布整屋</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <p class="cross"><span class="iconfont icon-cross-fill"></span></p>
+        </div>
+        <div class="mid">
+          <h3>房子的户型是？</h3>
+          <p>不包含客厅、餐厅、厨房和洗手间</p>
+        </div>
+      </header>
+      <section>
+        <li>
+          <div class="left">一室</div>
+          <div class="right">＞</div>
+        </li>
+        <li>
+          <div class="left">两室</div>
+          <div class="right">＞</div>
+        </li>
+        <li>
+          <div class="left">三室</div>
+          <div class="right">＞</div>
+        </li>
+        <li>
+          <div class="left">四室</div>
+          <div class="right">＞</div>
+        </li>
+        <li>
+          <div class="left">五室</div>
+          <div class="right">＞</div>
+        </li>
+        <li>
+          <div class="left">五室以上</div>
+          <div class="right">＞</div>
+        </li>
+      </section>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      document.querySelector(".cross").onclick = function() {
+        location.assign("./add.html");
+      };
+    </script>
+  </body>
+</html>

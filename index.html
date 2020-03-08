@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>引导页</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/index/u1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/index/u3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/index/u5.jpg" alt="" />
+          </div>
+          <div class="swiper-slide four">
+            <img src="./images/index/u7.jpg" alt="" />
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/swiper.animate1.0.3.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: false
+      });
+      document.querySelector(".four p").onclick = function() {
+        location.assign("./register.html");
+      };
+    </script>
+  </body>
+</html>

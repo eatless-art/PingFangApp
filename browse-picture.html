@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/picture-header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/browse-picture.css" />
+    <title>看图片</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top">
+          <div class="top-inner">
+            <div class="left">
+              <p class="back"><span class="iconfont icon-zuojiantou"></span></p>
+              <p>看图片</p>
+            </div>
+            <span class="iconfont icon-saoyisao right"></span>
+          </div>
+        </div>
+      </header>
+      <section>
+        <ul class="list list1">
+          <li class="all">全部</li>
+          <li>客厅</li>
+          <li>餐厅</li>
+          <li>卧室</li>
+          <li>书房</li>
+          <li>厨房</li>
+          <li>客卧</li>
+        </ul>
+        <ul class="list list2">
+          <li class="all">全部</li>
+          <li>北欧</li>
+          <li>日式</li>
+          <li>美式</li>
+          <li>中式</li>
+          <li>现代</li>
+          <li>欧式</li>
+        </ul>
+        <div class="topic-container"></div>
+      </section>
+      <footer>
+        <div class="footer-inner">
+          <p class="to-index"><span class="iconfont icon-shouye"></span>首页</p>
+          <p class="to-fixtures">
+            <span class="iconfont icon-zhuangxiu"></span>装修
+          </p>
+          <p class="to-add"><span class="add">+</span></p>
+          <p class="to-shopping">
+            <span class="iconfont icon-fenqifenqishangcheng1"></span>商城
+          </p>
+          <p class="to-mine"><span class="iconfont icon-wode"></span>我的</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var picArr = [
+        {
+          pic: "./images/browse-picture/u47_03.png",
+          content:
+            "中式风格，主要特点是造型简洁、高雅、完美，做工讲究。地中海风格，它的主题是自由、宁静、慵懒、文艺。欧式风格，其主要特点是造型复杂，装饰线条较多。北欧风格，主要是白色与原木色的结合。另外还有现代简约风和后现代风格等。",
+          headImg: "./images/publish-picture/twvle.jpg",
+          userName: "xxxx",
+          zans: 1002
+        },
+        {
+          pic: "./images/browse-picture/u47_05.png",
+          content:
+            "英式田园风格的特点主要在华美的布艺以及纯手工的制作，布面花色秀丽，多以纷繁的花卉图案为主。碎花、条纹、苏格兰图案是英式田园风格永恒的主调。家具材质多使用松木、椿木，制作以及雕刻全是纯手工的，十分讲究。",
+          headImg: "./images/publish-picture/three.jpg",
+          userName: "oooo",
+          zans: 201
+        },
+        {
+          pic: "./images/browse-picture/u47_12.png",
+          content:
+            "欧式风格主要是指西洋古典风格。典型的古典欧式风格强调以华丽的装饰、浓烈的色彩、精美的造型达到雍容华贵的装饰效果。欧式客厅顶部喜用大型灯池，并用华丽的枝形吊灯营造气氛。门窗上半部多做成圆弧形，并用带有花纹的石膏线勾边。室内有真正的壁炉或假壁炉造型。墙面用高档壁纸，或优质乳胶漆，以烘托豪华效果。",
+          headImg: "./images/publish-picture/seven.jpg",
+          userName: "pdd",
+          zans: 852
+        },
+        {
+          pic: "./images/browse-picture/u47_18.png",
+          content:
+            "地中海风格具有着独特的美学特点。一般选择自然的柔和色彩，在组合设计上注意空间搭配，充分利用每一寸空间，集装饰与应用于一体，在组合搭配上避免琐碎，显得大方、自然，散发出的古老尊贵的田园气息和文化品位。",
+          headImg: "./images/publish-picture/ten.jpg",
+          userName: "ssss",
+          zans: 126,
+          isAgree: false
+        }
+      ];
+      picArr.forEach(function(ele) {
+        var picBox = document.createElement("div");
+        picBox.className = "topic";
+        picBox.innerHTML =
+          "<div class='topic-top'><img src=" +
+          ele.pic +
+          "></div><div class='topic-word'>" +
+          ele.content +
+          "</div><div class='topic-down'><div class='topic-left'><img src=" +
+          ele.headImg +
+          "><p>" +
+          ele.userName +
+          "</p></div><div class='topic-right'><span class='iconfont icon-dianzan zans'>" +
+          ele.zans +
+          "</span></div></div>";
+        document.querySelector(".topic-container").appendChild(picBox);
+      });
+      var allLi = document.querySelectorAll(".list1 li");
+      allLi.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLi.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var allLiTwo = document.querySelectorAll(".list2 li");
+      allLiTwo.forEach(function(ele, index) {
+        ele.onclick = function() {
+          allLiTwo.forEach(function(item) {
+            item.className = "";
+          });
+          ele.className = "all";
+        };
+      });
+      var agree = document.querySelectorAll(".zans");
+      agree.forEach(function(ele, index) {
+        ele.onclick = function() {
+          var count = ele.innerHTML;
+          if (!picArr[index].isAgree) {
+            ele.style.color = "red";
+            ele.innerHTML = count * 1 + 1;
+            picArr[index].isAgree = true;
+          } else {
+            ele.style.color = "#000";
+            ele.innerHTML = count * 1 - 1;
+            picArr[index].isAgree = false;
+          }
+        };
+      });
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+      document.querySelector(".to-index").onclick = function() {
+        location.assign("./home-page.html");
+      };
+      document.querySelector(".to-fixtures").onclick = function() {
+        location.assign("./fixtures.html");
+      };
+      document.querySelector(".to-add").onclick = function() {
+        location.assign("./add.html");
+      };
+      document.querySelector(".to-shopping").onclick = function() {
+        location.assign("./shopping.html");
+      };
+      document.querySelector(".to-mine").onclick = function() {
+        location.assign("./mine.html");
+      };
+      document.querySelector(".back").onclick = function() {
+        window.history.back();
+      };
+    </script>
+  </body>
+</html>
