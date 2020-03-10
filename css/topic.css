@@ -48,7 +48,7 @@ section {
   margin: 15px auto;
   padding: 5px 4px;
 }
-/* .tab:nth-child(2) {
+.tab:nth-child(2) {
   display: none;
 }
 .tab:nth-child(3) {
@@ -56,4 +56,4 @@ section {
 }
 .tab:nth-child(4) {
   display: none;
-} */
+}

@@ -157,12 +157,17 @@
         document.querySelector(".three").appendChild(article)
      })
      var li = document.querySelectorAll(".list li");
+      var tab = document.querySelectorAll(".tab");
       li.forEach(function(ele, index) {
         ele.onclick = function() {
           li.forEach(function(item) {
-            item.className = "";           
+            item.className = "";
           });
           ele.className = "all-topic";
+          tab.forEach(function(tabs) {
+            tabs.style.display = "none";
+          });
+          tab[index].style.display = "block";
         };
       });
       document.querySelector(".to-index").onclick = function() {
